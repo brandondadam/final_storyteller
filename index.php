@@ -7,8 +7,6 @@
 	<body>
 		<?php
 
-		<?php
-
 if (file_exists('story.txt')) {
     $content = file_get_contents('story.txt');
 } else {
@@ -16,8 +14,6 @@ if (file_exists('story.txt')) {
 }
 
 ?>
-
-		?>
 		<form action="./">
 			<input type="text" name="msg" placeholder="Add to the story...">
 			<input type="submit" value="send">
