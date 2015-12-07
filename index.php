@@ -7,14 +7,15 @@
 	<body>
 		<?php
 
-		if (!file_exists(‘msg’)) {
+		if (!file_exists($_GET['msg'])) {
 		  mkdir(‘msg’);
-		} else{
+		}
+
 			if(!empty($_GET['msg'])){
 				echo $_GET['msg'];
 				$filename = time() . '.txt';
 				file_put_contents("msg/$filename", $_GET['msg']);
-			}
+			
 		}
 
 
