@@ -7,12 +7,12 @@
 	<body>
 		<?php
 
-if (file_exists('story.txt')) {
+		if (file_exists('story.txt')) {
 		echo $_GET['msg']
-    $content = file_get_contents('story.txt');
-} else {
-    $content = '(no content)';
-}
+		$msg = file_get_contents('story.txt');
+	} else {
+		$msg = '(no content)';
+	}
 
 ?>
 		<form action="./">
