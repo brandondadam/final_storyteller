@@ -7,14 +7,16 @@
 	<body>
 		<?php
 
-		if (file_exists('story.txt')) {
-		echo $_GET['msg']
-		$msg = file_get_contents('story.txt');
-	} else {
-		$msg = '(no content)';
-	}
+		if(!empty($_GET['msg'])){
+			echo $_GET['msg'];
+			$filename = time() . '.txt'
+			file_put_contents("msg/$filename", $_GET['msg']);
+		}
 
-?>
+		$msgs=glob('msg/*.txt');
+
+		?>
+
 		<form action="./">
 			<input type="text" name="msg" placeholder="Add to the story...">
 			<input type="submit" value="send">
