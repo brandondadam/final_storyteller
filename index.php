@@ -7,8 +7,8 @@
 	<body>
 		<?php
 
-		if (!file_exists(‘$filename’)) {
-		  mkdir(‘$filename’);
+		if (!file_exists($filename)) {
+		  mkdir($filename);
 		}
 		if(!empty($_GET['msg'])){
 			echo $_GET['msg'];
