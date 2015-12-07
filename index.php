@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Co-Authors</title>
+		<title>Story Builder</title>
 	</head>
 	<body>
 		<?php
