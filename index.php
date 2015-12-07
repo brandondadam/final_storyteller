@@ -10,7 +10,7 @@
 		if (!file_exists(‘msg’)) {
 		  mkdir(‘msg’);
 		}
-		if(!empty($_GET['msg'])){
+		if(file_exists(‘msg’)){
 			echo $_GET['msg'];
 			$filename = time() . '.txt';
 			file_put_contents("msg/$filename", $_GET['msg']);
