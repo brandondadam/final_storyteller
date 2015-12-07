@@ -5,5 +5,8 @@
 		<title>Co-Authors</title>
 	</head>
 	<body>
+		<form action="./">
+			<input type="text" name="msg" placeholder="Add to the story...">
+			<input type="submit" value="send">
 	</body>
 </html>
