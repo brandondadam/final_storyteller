@@ -7,11 +7,15 @@
 	<body>
 		<?php
 
-		if(!empty($_GET['msg'])){
-			echo $_GET['msg'];
-			$filename = time() . '.txt'
-			file_put_contents("msg/$filename", $_GET['msg']);
-		}
+		<?php
+
+if (file_exists('story.txt')) {
+    $content = file_get_contents('story.txt');
+} else {
+    $content = '(no content)';
+}
+
+?>
 
 		?>
 		<form action="./">
