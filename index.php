@@ -7,6 +7,9 @@
 	<body>
 		<?php
 
+		if (!file_exists(‘msg’)) {
+		  mkdir(‘msg’);
+		}
 		if(!empty($_GET['msg'])){
 			echo $_GET['msg'];
 			$filename = time() . '.txt';
