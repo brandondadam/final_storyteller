@@ -12,17 +12,16 @@ textarea{
 	font-size: 35pt;
 	padding: 20px;
 	width: 30%;
-	height: 60%;
+	height: 540px;
 	color: white;
 	outline-width: 0px;
 	background-color: #E5EAEC;
 }
-#type,#content{
+#type, #content{
 	float:left;
 	display: inline;
 }
 #content{
-	box-sizing:border-box;
 	color: #3D4A44;
 	font-size: 14pt;;
 	margin: 40px;
