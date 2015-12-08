@@ -7,7 +7,7 @@
 	<body>
 		<?php
 
-		if (!file_exists('msg') {
+		if (!file_exists('msg')) {
 		  mkdir('msg');
 		}
 		if(!empty($_GET['msg'])){
