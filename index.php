@@ -1,15 +1,3 @@
-<?php
-if(!empty($_POST['msg'])){
-	$filename = time() . '.txt';
-	file_put_contents("msg/$filename", $_POST['msg']);
-	$msgs=glob('msg/*.txt');
-	foreach ($msgs as $filename){
-		$msg = file_get_contents($filename);
-		echo '<p>' . htmlentities($msg) . '</p>';
-	}
-	exit;
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -29,7 +17,7 @@ if(!empty($_POST['msg'])){
 			}
 		?>
 	</div>
-		<form action="./" method="post">
+		<form action="submit.php" method="post">
 			<input type="text" name="msg" placeholder="Add to the story...">
 			<input type="submit" value="Send">
 		</form>
