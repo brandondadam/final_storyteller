@@ -4,7 +4,9 @@ html{
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-
+body {
+		display: inline-block;
+}
 .typearea .msgs{
 	float:left;
 	display: inline-block;
