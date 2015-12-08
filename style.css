@@ -7,7 +7,7 @@ html{
 
 .container{
 	float:left;
-	display: inline;
+	display: inline-block;
 }
 textarea{
 	border-style: hidden;
