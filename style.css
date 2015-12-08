@@ -9,7 +9,7 @@ textarea{
 	font-weight: bolder;
 	resize:none;
 	margin-top: 30px;
-	font-size: 35pt;
+	font-size: auto;
 	padding: 20px;
 	width: 30%;
 	height: 540px;
