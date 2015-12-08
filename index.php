@@ -6,8 +6,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class="container">
-			<div class="left">
+			<div class="typearea">
 				<form action="submit.php" method="post">
 					<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 					<input type="submit" value="Send">
@@ -26,7 +25,7 @@
 					}
 				?>
 			</div>
-		</div>
+
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
