@@ -27,5 +27,6 @@
 		<form action="./">
 			<input type="text" name="msg" placeholder="Add to the story...">
 			<input type="submit" value="Send">
+		</form>
 	</body>
 </html>
