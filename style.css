@@ -4,6 +4,11 @@ html{
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+
+.container{
+	float:left;
+	display: inline;
+}
 textarea{
 	border-style: hidden;
 	font-weight: bolder;
@@ -17,11 +22,7 @@ textarea{
 	outline-width: 0px;
 	background-color: #E5EAEC;
 }
-#type, #content{
-	float:left;
-	display: inline;
-}
-#content{
+.msgs{
 	color: #3D4A44;
 	font-size: 14pt;;
 	margin: 40px;

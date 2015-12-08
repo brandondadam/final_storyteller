@@ -14,7 +14,7 @@
 				</form>
 			</div>
 
-			<div class="right" class="msgs">
+			<div class="msgs">
 				<?php
 					if (!file_exists('msg')) {
 						mkdir('msg');
