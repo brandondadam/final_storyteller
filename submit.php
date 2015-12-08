@@ -1,6 +1,7 @@
 <?php
 if(!empty($_POST['msg'])){
-	$filename = time() . '.txt';
+	$filename = microtime() . '.txt';
+	$filename = str_replace(' ', '_', $filename);
 	file_put_contents("msg/$filename", $_POST['msg']);
 	$msgs=glob('msg/*.txt');
 	foreach ($msgs as $filename){
