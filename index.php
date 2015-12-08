@@ -24,7 +24,7 @@
 
 		?>
 
-		<form action="./">
+		<form action="./" method="post">
 			<input type="text" name="msg" placeholder="Add to the story...">
 			<input type="submit" value="Send">
 		</form>
