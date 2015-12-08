@@ -4,14 +4,9 @@ html{
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-body {
-		display: inline-block;
-}
-.typearea .msgs{
-	float:left;
-	display: inline-block;
-}
+
 .typearea{
+	float:left;
 	width: 35%;
 }
 textarea{
@@ -28,6 +23,7 @@ textarea{
 	background-color: #E5EAEC;
 }
 .msgs{
+	float: right;
 	color: #3D4A44;
 	width: 65%;
 	font-size: 14pt;
