@@ -5,15 +5,14 @@ html{
 	box-sizing: inherit;
 }
 textarea{
-	box-sizing:border-box;
 	border-style: hidden;
 	font-weight: bolder;
 	resize:none;
 	margin-top: 30px;
 	font-size: 35pt;
 	padding: 20px;
-	width: 35%
-	height: 540px;
+	width: 30%;
+	height: 60%;
 	color: white;
 	outline-width: 0px;
 	background-color: #E5EAEC;
