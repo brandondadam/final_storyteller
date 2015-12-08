@@ -1,6 +1,12 @@
 jQuery(document).ready(function($) {
 	$('form').submit(function(e) {
 		e.preventDefault();
-		$.get('./?' + $('form').serialize());
+		$.ajax('./', {
+			method: 'POST',
+			data : $('form').serialize()),
+			success: function(msgs) {
+				$('#msgs').html(msgs);
+			}
+		});
 	});
 });
