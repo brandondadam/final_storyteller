@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 		$.ajax('./', {
 			method: 'POST',
-			data : $('form').serialize()),
+			data : $('form').serialize(),
 			success: function(msgs) {
 				$('#msgs').html(msgs);
 			}
