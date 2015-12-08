@@ -4,7 +4,7 @@ html{
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-.type textarea{
+textarea{
 	box-sizing:border-box;
 	border-style: hidden;
 	font-weight: bolder;
@@ -18,7 +18,7 @@ html{
 	outline-width: 0px;
 	background-color: #E5EAEC;
 }
-.type,#content{
+#type,#content{
 	float:left;
 	display: inline;
 }

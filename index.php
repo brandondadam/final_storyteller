@@ -6,12 +6,11 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class="type">
+
 			<form action="submit.php" method="post">
-				<textarea type="text" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
+				<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 				<input type="submit" value="Send">
 			</form>
-		</div>
 
 		<div id="msgs">
 			<?php
