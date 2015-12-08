@@ -8,7 +8,7 @@
 	<body>
 		<div class="textarea">
 			<form action="submit.php" method="post">
-				<input type="text" name="msg" placeholder="Add to the story...">
+				<textarea type="text" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 				<input type="submit" value="Send">
 			</form>
 		</div>
