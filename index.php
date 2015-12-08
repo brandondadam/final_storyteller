@@ -11,7 +11,7 @@
 		  mkdir('msg');
 		}
 		if(!empty($_GET['msg'])){
-			echo $_GET['msg'];
+
 			$filename = time() . '.txt';
 			file_put_contents("msg/$filename", $_GET['msg']);
 		}
