@@ -6,6 +6,13 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<div class="textarea">
+			<form action="submit.php" method="post">
+				<input type="text" name="msg" placeholder="Add to the story...">
+				<input type="submit" value="Send">
+			</form>
+		</div>
+
 		<div id="msgs">
 			<?php
 				if (!file_exists('msg')) {
@@ -17,12 +24,6 @@
 					echo '<p>' . htmlentities($msg) . '</p>';
 			}
 		?>
-	</div>
-	<div class="textarea">
-		<form action="submit.php" method="post">
-			<input type="text" name="msg" placeholder="Add to the story...">
-			<input type="submit" value="Send">
-		</form>
 	</div>
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
