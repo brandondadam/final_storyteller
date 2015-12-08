@@ -9,7 +9,7 @@ html{
 	float:left;
 	display: inline-block;
 }
-.typearea form{
+.typearea{
 	width: 35%;
 }
 textarea{
