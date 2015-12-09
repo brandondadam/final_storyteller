@@ -25,7 +25,7 @@
 				?>
 		</div>
 
-		<input type="submit" value="Reset" onsubmit="return resetChat">
+		<input type="submit" value="Reset" onsubmit="return resetChat(e);">
 
 		<script>
 			function resetChat(e) {
