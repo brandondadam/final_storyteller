@@ -39,6 +39,7 @@ textarea{
 
 @media (max-width: 550px){
 	.typearea{
+		margin-left: 5px;
 		width: 100%;
 	}
 }
