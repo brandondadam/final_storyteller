@@ -31,11 +31,6 @@
 				if(charCode == 13){
 					document.getElementById('storyForm').submit();
 				}
-
-				$('#msgs').click(function() {
-					$('form').removeClass('hidden');
-					$('#msgs').addClass('hidden');
-				});
 		</script>
 
 		<script src="jquery-1.11.3.min.js"></script>
