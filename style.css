@@ -15,7 +15,7 @@ textarea, #msgs{
 textarea{
 	float:left;
 	width: 35%;
-	max-width: 400px;
+	min-width: 400px;
 	border-style: hidden;
 	font-weight: bolder;
 	resize:none;
