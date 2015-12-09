@@ -8,13 +8,10 @@ body{
 	box-sizing: inherit;
 }
 
-.typearea .msgs{
+textarea, .msgs{
 	display: inline;
 }
-.typearea{
-	float:left;
-	width: 35%;
-}
+
 textarea{
 	float:left;
 	width: 35%;
