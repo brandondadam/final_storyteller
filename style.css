@@ -44,7 +44,19 @@ textarea{
 	.typearea{
 		width: 100%;
 	}
-	textarea{
+}
+@media (max-width: 500px){
+	.typearea{
+		width: 100%;
+	}
+}
+@media (max-width: 450px){
+	.typearea{
+		width: 100%;
+	}
+}
+@media (max-width: 400px){
+	.typearea{
 		width: 100%;
 	}
 }
