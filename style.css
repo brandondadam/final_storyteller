@@ -41,7 +41,10 @@ textarea{
 }
 
 @media (max-width: 550px){
-	.typearea textarea{
+	.typearea{
+		width: 100%;
+	}
+	textarea{
 		width: 100%;
 	}
 }
