@@ -40,8 +40,8 @@ textarea{
 	margin-left: 40px;
 }
 
-@media (min-width: 550px){
-	.typearea{
+@media (max-width: 550px){
+	.typearea textarea{
 		width: 100%;
 	}
 }
