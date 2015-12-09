@@ -28,7 +28,7 @@ textarea{
 .msgs{
 	max-width: 50%;
 	float: left;
-	color: #3D4A44;
+	color: grey;
 	font-size: 14pt;
 	margin: 40px;
 }
