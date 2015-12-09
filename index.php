@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form action="submit.php" id="form" method="post" onsubmit="return false;" onKeydown="return addText(event);">
+		<form action="submit.php" id="form" onsubmit="return false;" onKeydown="return addText(event);">
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 			<input type="submit" value="Send">
 		</form>
