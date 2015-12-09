@@ -31,6 +31,7 @@
 				if(charCode == 13){
 					document.getElementById('storyForm').submit();
 				}
+			}
 		</script>
 
 		<script src="jquery-1.11.3.min.js"></script>
