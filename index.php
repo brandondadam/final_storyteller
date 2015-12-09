@@ -30,6 +30,8 @@
 				var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
 				if(charCode == 13){
 					document.getElementById('storyForm').submit();
+				}else {
+					return true;
 				}
 			}
 		</script>
