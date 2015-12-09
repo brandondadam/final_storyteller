@@ -42,21 +42,8 @@ textarea{
 
 @media (max-width: 550px){
 	.typearea{
-		width: 100%;
-	}
-}
-@media (max-width: 500px){
-	.typearea{
-		width: 100%;
-	}
-}
-@media (max-width: 450px){
-	.typearea{
-		width: 100%;
-	}
-}
-@media (max-width: 400px){
-	.typearea{
+		font-size: 28px;
+		height: 500px;
 		width: 100%;
 	}
 }
