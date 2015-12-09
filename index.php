@@ -21,19 +21,10 @@
 					foreach ($msgs as $filename){
 						$msg = file_get_contents($filename);
 						echo '<p>' . htmlentities($msg) . '</p>';
+						$('msgs')[0].reset();
 					}
 				?>
 		</div>
-
-		<input type="submit" value="Reset"  onsubmit="return true;" onsubmit="return resetChat(e);">
-
-		<script>
-			function resetChat(e) {
-				if(resetChat == true)
-				document.getElementById("msgs").reset();
-			}
-
-		</script>
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
