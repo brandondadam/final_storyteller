@@ -9,7 +9,6 @@ html{
 	display: inline;
 }
 .typearea{
-	margin: 0px;
 	float:left;
 	width: 35%;
 }
@@ -24,6 +23,7 @@ textarea{
 	height: 520px;
 	color: white;
 	outline-width: 0px;
+	background-size: cover;
 	background-color: #E5EAEC;
 }
 .msgs{
