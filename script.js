@@ -10,4 +10,13 @@ jQuery(document).ready(function($) {
 		});
 	});
 
+	setInterval(function(){
+		$.ajax('update.php', {
+			method: 'POST',
+			success: function(msgs) {
+				$('#msgs').html(msgs);
+			}
+		});
+	}, 1000);
+
 });
