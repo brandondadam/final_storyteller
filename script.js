@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
 			method: 'POST',
 			data : $('form').serialize(),
 			success: function(msgs) {
-				$('#msgs').html(msgs);
+				//$('#msgs').html(msgs);
 				$('#msgs')[0].reset();
 
 			}
