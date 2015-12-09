@@ -36,3 +36,9 @@ textarea{
 	max-width: 100%;
 	margin-left: 40px;
 }
+
+@media (max-width: 550px){
+	.typearea{
+		width: 100%;
+	}
+}
