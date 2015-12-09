@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form action="submit.php" method="post" onsubmit="return false;" onKeyPress="return checkSubmit(e)">
+		<form action="submit.php" id="storyForm" method="post" onsubmit="return false;" onKeyPress="return checkSubmit(event)">
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 			<input type="submit" value="Send">
 		</form>
@@ -27,8 +27,9 @@
 
 		<script>
 			function checkSubmit(e){
-				if(e && e.KeyCode == 13){
-					document.forms.submit();
+				var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
+				if(charCode == 13){
+					document.getElementById('storyForm').submit();
 				}
 			}
 		</script>
