@@ -21,8 +21,9 @@
 					foreach ($msgs as $filename){
 						$msg = file_get_contents($filename);
 						echo '<p>' . htmlentities($msg) . '</p>';
-						$('msgs')[0].reset();
 					}
+
+					$msgs[0].reset();
 				?>
 		</div>
 		<script src="jquery-1.11.3.min.js"></script>
