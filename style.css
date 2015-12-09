@@ -26,12 +26,13 @@ textarea{
 	background-color: #E5EAEC;
 }
 .msgs{
+	max-width: 50%;
 	float: left;
 	color: #3D4A44;
 	font-size: 14pt;
 	margin: 40px;
 }
 .msgs p{
-	max-width: 50%;
+	max-width: 100%;
 	margin-left: 40px;
 }
