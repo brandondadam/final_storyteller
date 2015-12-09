@@ -10,7 +10,8 @@
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 			<input type="submit" value="Send">
 		</form>
-		<div class="msgs">
+
+		<div id="msgs">
 				<?php
 					if (!file_exists('msg')) {
 						mkdir('msg');
