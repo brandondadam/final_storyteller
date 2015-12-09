@@ -1,6 +1,9 @@
 html{
 	font-family: helvetica,sans-serif;
 }
+body{
+	margin: 0px;
+}
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -16,7 +19,6 @@ textarea{
 	border-style: hidden;
 	font-weight: bolder;
 	resize:none;
-	margin-left: 0px !important;
 	margin-top: 30px;
 	font-size: 35pt;
 	padding: 20px;
