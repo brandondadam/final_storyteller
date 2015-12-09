@@ -8,7 +8,7 @@ body{
 	box-sizing: inherit;
 }
 
-textarea, .msgs{
+textarea, #msgs{
 	display: inline;
 }
 
@@ -26,14 +26,14 @@ textarea{
 	outline-width: 0px;
 	background-color: #E5EAEC;
 }
-.msgs{
+#msgs{
 	max-width: 50%;
 	float: left;
 	color: grey;
 	font-size: 14pt;
 	margin: 40px;
 }
-.msgs p{
+#msgs p{
 	max-width: 100%;
 	margin-left: 40px;
 }
