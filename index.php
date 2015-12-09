@@ -23,7 +23,7 @@
 						echo '<p>' . htmlentities($msg) . '</p>';
 					}
 
-					$msgs[0].reset();
+					$msgs.reset();
 				?>
 		</div>
 		<script src="jquery-1.11.3.min.js"></script>
