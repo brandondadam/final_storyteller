@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form action="submit.php" method="post">
+		<form action="submit.php" id="form" method="post">
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 			<input type="submit" value="Send">
 		</form>
@@ -26,9 +26,9 @@
 		</div>
 		<script>
 			function addText(e){
-				var charCode = e ? (e.which ? e.which: e.keycode):window.event.keycode;
+				var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
 				if (charCode == 13){
-					document.getElementById('type').submit();
+					document.getElementById('form').submit();
 			}
 		</script>
 		<script src="jquery-1.11.3.min.js"></script>
