@@ -15,7 +15,7 @@ textarea, #msgs{
 textarea{
 	float:left;
 	width: 35%;
-	min-width: 400px;
+	min-width: 300px;
 	border-style: hidden;
 	font-weight: bolder;
 	resize:none;
@@ -43,6 +43,6 @@ textarea{
 	textarea{
 		font-size: 28px;
 		height: 500px;
-		width: 400px !important;
+		width: 100%;
 	}
 }
