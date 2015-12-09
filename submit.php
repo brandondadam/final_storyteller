@@ -7,6 +7,5 @@ if(!empty($_POST['msg'])){
 		$msg = file_get_contents($filename);
 		echo '<p>' . htmlentities($msg) . '</p>';
 	}
-	header('Location: ./');
 }
 ?>
