@@ -1,9 +1,7 @@
 html{
 	font-family: helvetica,sans-serif;
 }
-*, *:before, *:after {
-	box-sizing: inherit;
-}
+
 
 .typearea .msgs{
 	display: inline;
@@ -23,7 +21,6 @@ textarea{
 	height: 520px;
 	color: white;
 	outline-width: 0px;
-	background-size: cover;
 	background-color: #E5EAEC;
 }
 .msgs{
