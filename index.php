@@ -6,13 +6,11 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-<div id="msgs">
-				<form action="submit.php" method="post">
-					<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
-					<input type="submit" value="Send">
-				</form>
-
-			<div class="msgs">
+		<div id="msgs">
+			<form action="submit.php" method="post">
+				<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
+				<input type="submit" value="Send">
+			</form>
 				<?php
 					if (!file_exists('msg')) {
 						mkdir('msg');
@@ -23,7 +21,6 @@
 						echo '<p>' . htmlentities($msg) . '</p>';
 					}
 				?>
-			</div>
 		</div>
 
 		<script src="jquery-1.11.3.min.js"></script>
