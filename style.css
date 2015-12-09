@@ -1,7 +1,9 @@
 html{
 	font-family: helvetica,sans-serif;
 }
-
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
 .typearea .msgs{
 	display: inline;
