@@ -39,7 +39,9 @@
 								$('#msgs').html(msgs);
 							}
 						});
-			}
+							});
+						}
+
 		</script>
 
 		<script src="jquery-1.11.3.min.js"></script>
