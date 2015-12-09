@@ -22,8 +22,6 @@
 						$msg = file_get_contents($filename);
 						echo '<p>' . htmlentities($msg) . '</p>';
 					}
-
-					$msgs.reset();
 				?>
 		</div>
 		<script src="jquery-1.11.3.min.js"></script>

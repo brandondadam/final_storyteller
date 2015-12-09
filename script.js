@@ -6,6 +6,8 @@ jQuery(document).ready(function($) {
 			data : $('form').serialize(),
 			success: function(msgs) {
 				$('#msgs').html(msgs);
+				$('#msgs')[0].reset();
+
 			}
 		});
 	});
