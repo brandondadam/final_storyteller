@@ -24,6 +24,15 @@
 					}
 				?>
 		</div>
+
+		<input type="submit" value="Reset" onsubmit="return resetChat">
+
+		<script>
+			function resetChat(e) {
+				document.getElementById("msgs").reset();
+			}
+
+		</script>
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
