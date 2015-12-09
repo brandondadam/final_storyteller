@@ -45,4 +45,8 @@ textarea{
 		height: 500px;
 		width: 100%;
 	}
+	#msgs{
+		max-width: 60%;
+	}
+
 }
