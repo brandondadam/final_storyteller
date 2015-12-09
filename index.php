@@ -25,10 +25,11 @@
 				?>
 		</div>
 
-		<input type="submit" value="Reset" onsubmit="return resetChat(e);">
+		<input type="submit" value="Reset"  onsubmit="return true;" onsubmit="return resetChat(e);">
 
 		<script>
 			function resetChat(e) {
+				if(resetChat == true)
 				document.getElementById("msgs").reset();
 			}
 
