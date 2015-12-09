@@ -28,11 +28,11 @@ textarea{
 	background-color: #E5EAEC;
 }
 #msgs{
-	max-width: 50%;
+	max-width: 40%;
 	float: left;
 	color: grey;
 	font-size: 14pt;
-	margin: 40px;
+	margin: 30px;
 }
 #msgs p{
 	max-width: 100%;
