@@ -9,4 +9,7 @@ jQuery(document).ready(function($) {
 			}
 		});
 	});
+	setInterval(function(){
+		console.log(update);
+	}, 1000);
 });
