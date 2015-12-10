@@ -11,16 +11,6 @@ jQuery(document).ready(function($) {
 		});
 	});
 
-	function checkSubmit(e){
-		var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
-		if(charCode == 13){
-			document.getElementById('storyForm').submit();
-		}
-	}
-
-
-
-
 	setInterval(function(){
 		$.ajax('update.php', {
 			method: 'POST',
@@ -31,3 +21,9 @@ jQuery(document).ready(function($) {
 	}, 1000);
 
 });
+function checkSubmit(e){
+	var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
+	if(charCode == 13){
+		document.getElementById('storyForm').submit();
+	}
+}
