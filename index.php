@@ -11,6 +11,9 @@
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 		</form>
 
+		<button id="save" onclick="save();return false;">Save</button>
+		<div id="response"></div>
+
 		<div id="msgs">
 			<?php
 				if (!file_exists('msg')) {
@@ -25,6 +28,22 @@
 				}
 			?>
 		</div>
+		<script>
+			function save(){
+				var response=document.getElementById("response");
+				var data = 'data='+document.getElementById("msgs").value;
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange=function(){
+					if (xmlhttp.readyState==4 && xmlhttp.status==200){
+						response.innerHTML='<a href="files/'+xmlhttp.responseText+'.txt">'+xmlhttp.responseText+'.txt</a>';
+					}
+				}
+				xmlhttp.open("POST","save.php",true);
+				//Must add this request header to XMLHttpRequest request for POST
+				xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xmlhttp.send(data);
+			}
+</script>
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
