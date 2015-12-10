@@ -25,27 +25,28 @@
 				?>
 		</div>
 
-				<script src="jquery-1.11.3.min.js"></script>
 		<script>
 			function checkSubmit(e){
 				var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
 				if(charCode == 13){
-					document.getElementById('storyForm').submit((function(e) {
-						console.log('checking');
-						e.preventDefault();
-						$.ajax('submit.php', {
-							method: 'POST',
-							data : $('form').serialize(),
-							success: function(msgs) {
-								$('#msgs').html(msgs);
-							}
+					jQuery(document).ready(function($) {
+						$('form').submit(function(e) {
+							console.log('checking');
+							e.preventDefault();
+							$.ajax('submit.php', {
+								method: 'POST',
+								data : $('form').serialize(),
+								success: function(msgs) {
+									$('#msgs').html(msgs);
+								}
+							});
 						});
-					});
 				}
 			}
 
 		</script>
 
+		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
