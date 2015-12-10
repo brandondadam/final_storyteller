@@ -44,6 +44,9 @@ textarea{
 
 @media (max-width: 550px){
 	textarea{
+		position:relative;
+		top:50px;
+		left: 0px;
 		font-size: 28px;
 		height: 500px;
 		width: 100%;
