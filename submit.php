@@ -8,4 +8,8 @@ if(!empty($_POST['msg'])){
 		echo '<p>' . htmlentities($msg) . '</p>';
 	}
 }
+$filename = filter_var($_POST['msg'], FILTER_SANITIZE_STRING);
+
+                /*** unset the form token in the session ***/
+                unset( $_SESSION['form_token']);
 ?>
