@@ -14,10 +14,8 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form action="submit.php" onKeyPress="return checkSubmit(event);">
-
-			<input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
-
+		
+		<form onKeyPress="return checkSubmit(event);">
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 		</form>
 
