@@ -14,7 +14,7 @@ textarea, #msgs{
 
 textarea{
 	position: fixed;
-	top:100px;
+	top:50px;
 	left: 0px;
 	float:left;
 	width: 35%;
@@ -35,6 +35,7 @@ textarea{
 	color: grey;
 	font-size: 14pt;
 	margin-left: 35%;
+
 }
 #msgs p{
 	margin-right: 50px;
