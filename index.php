@@ -23,10 +23,10 @@
 
 				$msgs=glob('msg/*.txt');
 				foreach ($msgs as $filename){
-					//$msg = file_get_contents($filename);
-					//echo '<p>' . htmlentities($msg) . '</p>';
+					$msg = file_get_contents($filename);
+					echo '<p>' . htmlentities($msg) . '</p>';
 					//this is for clearing messages, and it works, but then I can't submit anymore.
-					file_put_contents($filename, '');
+					//file_put_contents($filename, '');
 				}
 			?>
 		</div>
