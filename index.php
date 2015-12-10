@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form onKeyPress="return checkSubmit(event);">
+		<form onKeyPress="return submit(event);">
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 			<input type="submit" value="Send">
 		</form>
@@ -25,7 +25,16 @@
 				?>
 		</div>
 
+
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
+		<script>
+			function checkSubmit(e){
+				var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
+				if(charCode == 13){
+					console.log('ckdle');
+				}
+			}
+		</script>
 	</body>
 </html>
