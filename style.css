@@ -51,6 +51,8 @@ textarea{
 		width: 100%;
 	}
 	#msgs{
+		float: left;
+		margin: 40px;
 		width: 75%;
 	}
 }
