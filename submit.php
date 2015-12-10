@@ -1,7 +1,4 @@
 <?php
-
-unset($_SESSION['form_token']);
-
 if(!empty($_POST['msg'])){
 	$filename = time() . '.txt';
 	file_put_contents("msg/$filename", $_POST['msg']);
@@ -11,7 +8,4 @@ if(!empty($_POST['msg'])){
 		echo '<p>' . htmlentities($msg) . '</p>';
 	}
 }
-	$filename = filter_var($_POST['msg'], FILTER_SANITIZE_STRING);
-
-
 ?>

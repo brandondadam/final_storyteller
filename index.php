@@ -1,11 +1,3 @@
-<?php
-	session_start();
-
-	$form_token = uniqid();
-
-	$_SESSION['form_token'] = $form_token;
-
-?>
 <!DOCTYPE html>
 <html>
 	<head>
