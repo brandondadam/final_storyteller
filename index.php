@@ -38,9 +38,10 @@
 							success: function(msgs) {
 								$('#msgs').html(msgs);
 							}
-						});
-							});
 						}
+					});
+				}
+			}
 
 		</script>
 
