@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<form onKeyPress="return checkSubmit(event);">
-			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
+			<textarea type="text" id="type" name="msg" placeholder="what's on your mind..." rows="8" cols"80"></textarea>
 		</form>
 		<div id="msgs">
 			<?php
