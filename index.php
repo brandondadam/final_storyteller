@@ -25,6 +25,7 @@
 				?>
 		</div>
 
+				<script src="jquery-1.11.3.min.js"></script>
 		<script>
 			function checkSubmit(e){
 				var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
@@ -45,7 +46,6 @@
 
 		</script>
 
-		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>
