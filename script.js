@@ -1,4 +1,14 @@
 jQuery(document).ready(function($) {
+
+	function checkSubmit(e){
+		var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
+		if(charCode == 13){
+			console.log('ckdle');
+		}
+	}
+
+
+
 	$('form').submit(function(e) {
 		console.log('checking');
 		e.preventDefault();
@@ -21,11 +31,3 @@ jQuery(document).ready(function($) {
 	}, 1000);
 
 });
-
-
-function checkSubmit(e){
-	var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
-	if(charCode == 13){
-		console.log('ckdle');
-	}
-}
