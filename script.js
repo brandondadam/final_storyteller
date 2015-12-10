@@ -8,6 +8,7 @@ $('form').submit(function(e) {
 			$('#msgs').html(msgs);
 		}
 	});
+	$('textarea').val('');
 });
 setInterval(function() {
 	$.ajax('update.php', {
