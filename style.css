@@ -51,6 +51,10 @@ textarea{
 		height: 500px;
 		width: 100%;
 	}
+	#msgs{
+		margin: 40px;
+	}
+
 	#msgs p{
 		margin-left: 0px;
 	}
