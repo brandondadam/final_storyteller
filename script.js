@@ -1,5 +1,4 @@
 $('form').submit(function(e) {
-	console.log('checking');
 	e.preventDefault();
 	$.ajax('submit.php', {
 		method: 'POST',

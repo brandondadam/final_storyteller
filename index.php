@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form onKeyPress="return checkSubmit(event);">
+		<form action="submit.php" onKeyPress="return checkSubmit(event);">
 
 			<input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
 
