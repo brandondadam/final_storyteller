@@ -17,8 +17,8 @@ textarea{
 	top:70px;
 	left: 0px;
 	float:left;
-	max-width: 35%;
-	min-width: 300px;
+	width: 35%;
+	min-width: 100px;
 	border-style: hidden;
 	font-weight: bolder;
 	resize:none;
@@ -34,18 +34,11 @@ textarea{
 	float: left;
 	color: grey;
 	font-size: 14pt;
-	margin-left: 45%;
+	margin-left: 35%;
 }
 #msgs p{
 	max-width: 100%;
-	margin-left: 40px;
-}
-
-@media (max-width: 845px){
-	#msgs{
-		margin-left: 300px;
-		margin-right: 40px;
-	}
+	margin-left: 60px;
 }
 
 @media (max-width: 550px){
