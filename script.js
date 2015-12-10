@@ -1,4 +1,3 @@
-console.log('ckdle');
 $('form').submit(function(e) {
 	console.log('checking');
 	e.preventDefault();
@@ -19,6 +18,7 @@ setInterval(function() {
 		}
 	});
 }, 1000);
+
 
 
 function checkSubmit(e){
