@@ -34,11 +34,8 @@ textarea{
 	float: left;
 	color: grey;
 	font-size: 14pt;
-	margin-left: 35%;
-}
-#msgs p{
-	margin-right: 50px;
-	margin-left: 100px;
+	margin-left: 40%;
+	margin-right: 40px;
 }
 
 @media (max-width: 550px){
@@ -52,10 +49,8 @@ textarea{
 	}
 	#msgs{
 		float: left;
+		width: 400px;
 		margin: 40px;
 	}
-	#msgs p{
-		width: 75%;
-		float: left;
-	}
+
 }
