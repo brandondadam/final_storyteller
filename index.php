@@ -11,8 +11,6 @@
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 		</form>
 
-		<button onclick="saveStory()">Save The Story</button>
-
 		<div id="msgs">
 			<?php
 				if (!file_exists('msg')) {
@@ -28,15 +26,6 @@
 				}
 			?>
 		</div>
-
-		<?php
-		function saveStory(){
-			console.log('about to save')
-			$msgs=glob('msg/*.txt');
-			foreach ($msgs as $filename){
-				$msg = file_put_contents($filename, '', FILE_APPEND);
-		}
-		?>
 
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
