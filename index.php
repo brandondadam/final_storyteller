@@ -7,9 +7,8 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form onKeyPress="return checkSubmit(event);" onsubmit="return formSubmit();">
+		<form onKeyPress="return checkSubmit(event);">
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
-			<input type="submit" value="Send">
 		</form>
 
 		<div id="msgs">
