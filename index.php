@@ -1,6 +1,6 @@
 <?php
 	session_start();
-console.log('token started');
+
 	$form_token = uniqid();
 
 	$_SESSION['form_token'] = $form_token;
@@ -25,7 +25,7 @@ console.log('token started');
 				if (!file_exists('msg')) {
 					mkdir('msg');
 				}
-
+ echo $form_token;
 				$msgs=glob('msg/*.txt');
 				foreach ($msgs as $filename){
 					$msg = file_get_contents($filename);
