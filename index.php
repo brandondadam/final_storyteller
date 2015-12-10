@@ -25,15 +25,6 @@
 				?>
 		</div>
 
-		<script>
-			function checkSubmit(e){
-				var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
-				if(charCode == 13){
-					document.getElementById('storyForm').submit();
-				}
-			}
-		</script>
-
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
