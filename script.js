@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 function checkSubmit(e){
 	var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
 	if(charCode == 13){
-		jQuery(document).ready(function($) {
+
 			$('form').submit(function(e) {
 				console.log('checking');
 				e.preventDefault();
@@ -48,4 +48,3 @@ function checkSubmit(e){
 
 		});
 	}
-}
