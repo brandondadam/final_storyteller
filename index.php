@@ -1,3 +1,21 @@
+<?php
+session_start();
+
+
+if(isset($_POST['token']){
+	echo "token";
+	if(isset($_SESSION['token']) && $_POST['token']==$_SESSION['token']){
+		$msg = htmlentities($_POST['msg']);
+	}
+}
+
+
+
+
+$token = $_SESSION['token'] = md5(uniqid(mt_rand(),true));
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,8 +27,10 @@
 	<body>
 
 		<form onKeyPress="return checkSubmit(event);">
-			<input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
+
+			<input type="hidden" name="token" value="<?php=$token;?>" />
+
 		</form>
 
 		<div id="msgs">
