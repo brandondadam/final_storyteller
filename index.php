@@ -1,9 +1,10 @@
 <?php
 	session_start();
-
+console.log('token started');
 	$form_token = uniqid();
 
 	$_SESSION['form_token'] = $form_token;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +15,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		
+
 		<form onKeyPress="return checkSubmit(event);">
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 		</form>
