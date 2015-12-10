@@ -11,21 +11,15 @@ textarea, #msgs{
 	display: inline;
 }
 textarea{
-
-transform: translateZ(0);
-box-shadow: 0 0 2px rgba(0, 0, 0, 0);
-transition-duration: 0.4s;
-
-
-
-
-
+	transform: translateZ(0);
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+	transition-duration: 0.3s;
 	position: fixed;
 	top:50px;
 	left: 0px;
 	float:left;
 	width: 35%;
-	/*min-width: 100px;*/
+
 	border-style: hidden;
 	font-weight: bolder;
 	resize:none;
@@ -37,7 +31,7 @@ transition-duration: 0.4s;
 	background-color: #E5EAEC;
 }
 textarea:hover{
-	box-shadow: 0 0 12px rgba(120, 120, 120, 0.6);
+	box-shadow: 0 0 12px rgba(110, 110, 110, 0.6);
 }
 #msgs{
 	width: 65%;
