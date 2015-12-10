@@ -52,7 +52,7 @@ textarea{
 		width: 100%;
 	}
 	#msgs{
-		margin: 40px;
+		margin-left: 0px;
 	}
 
 	#msgs p{
