@@ -8,6 +8,8 @@ $('form').submit(function(e) {
 			$('#msgs').html(msgs);
 		}
 	});
+$('textarea').val('');
+
 });
 setInterval(function() {
 	$.ajax('update.php', {
@@ -22,6 +24,6 @@ function checkSubmit(e){
 	var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
 	if(charCode == 13){
 		$('form').submit();
-		$('textarea').val('');
+
 	}
 }
