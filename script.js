@@ -20,8 +20,8 @@ setInterval(function() {
 
 function checkSubmit(e){
 	var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
-	e.preventDefault();
 	if(charCode == 13){
 		$('form').submit();
+		e.preventDefault();
 	}
 }
