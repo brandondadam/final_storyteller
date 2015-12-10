@@ -7,11 +7,9 @@ body{
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-
 textarea, #msgs{
 	display: inline;
 }
-
 textarea{
 	position: fixed;
 	top:50px;
@@ -36,13 +34,11 @@ textarea{
 	font-size: 14pt;
 	margin-top: 50px;
 	margin-left: 35%;
-
 }
 #msgs p{
 	margin-right: 50px;
 	margin-left: 100px;
 }
-
 @media (max-width: 600px){
 	textarea{
 		position:relative;
@@ -57,7 +53,6 @@ textarea{
 		margin: 40px;
 		width: 75%;
 	}
-
 	#msgs p{
 		margin-left: 0px;
 		margin-right: 0px;
