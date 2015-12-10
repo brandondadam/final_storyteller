@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-
+<input type="hidden" name="form_token" value="<?php echo $form_token; ?>" />
 		<form onKeyPress="return checkSubmit(event);">
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 		</form>
@@ -25,7 +25,6 @@
 				if (!file_exists('msg')) {
 					mkdir('msg');
 				}
- echo $form_token;
 				$msgs=glob('msg/*.txt');
 				foreach ($msgs as $filename){
 					$msg = file_get_contents($filename);
