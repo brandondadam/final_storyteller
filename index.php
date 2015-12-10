@@ -12,19 +12,19 @@
 		</form>
 
 		<div id="msgs">
-				<?php
-					if (!file_exists('msg')) {
-						mkdir('msg');
-					}
-					$msgs=glob('msg/*.txt');
-					foreach ($msgs as $filename){
-						file_put_contents($filename, '');
-
-					}
-				?>
+			<?php
+				if (!file_exists('msg')) {
+					mkdir('msg');
+				}
+				$msgs=glob('msg/*.txt');
+				foreach ($msgs as $filename){
+					$msg = file_get_contents($filename);
+					echo '<p>' . htmlentities($msg) . '</p>';
+					//this is for clearing messages
+					//file_put_contents($filename, '');
+				}
+			?>
 		</div>
-
-
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
