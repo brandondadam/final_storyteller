@@ -31,7 +31,6 @@ textarea{
 	background-color: #E5EAEC;
 }
 #msgs{
-	margin-right: 35%;
 	max-width: 40%;
 	float: right;
 	color: grey;
@@ -40,6 +39,7 @@ textarea{
 }
 #msgs p{
 	max-width: 100%;
+	margin-right: 35%;
 	margin-left: 40px;
 }
 
