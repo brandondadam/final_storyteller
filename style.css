@@ -53,9 +53,9 @@ textarea{
 	#msgs{
 		float: left;
 		margin: 40px;
-		width: 75%;
 	}
 	#msgs p{
+		width: 75%;
 		float: left;
 	}
 }
