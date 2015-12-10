@@ -32,7 +32,7 @@
 <script>
 function saveTextAsFile()
 {
-	var textToWrite = document.getElementById("msg.txt").value;
+	var textToWrite = document.getElementById("msg").value;
 	var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
 	var fileNameToSaveAs = document.getElementById("Story").value;
 
