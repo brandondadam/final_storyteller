@@ -1,14 +1,14 @@
-jQuery(document).ready(function($) {
 
-	function checkSubmit(e){
-		var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
-		if(charCode == 13){
-			console.log('ckdle');
-		}
+
+function checkSubmit(e){
+	var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
+	if(charCode == 13){
+		console.log('ckdle');
+		formSubmit();
 	}
+}
 
-
-
+function formSubmit(){
 	$('form').submit(function(e) {
 		console.log('checking');
 		e.preventDefault();
@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 		});
 	});
 
-	setInterval(function(){
+	setInterval(function() {
 		$.ajax('update.php', {
 			method: 'POST',
 			success: function(msgs) {
@@ -29,5 +29,4 @@ jQuery(document).ready(function($) {
 			}
 		});
 	}, 1000);
-
-});
+}
