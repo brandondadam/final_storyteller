@@ -11,6 +11,15 @@ textarea, #msgs{
 	display: inline;
 }
 textarea{
+
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+transition-duration: 0.3s;
+
+
+
+
+
 	position: fixed;
 	top:50px;
 	left: 0px;
@@ -26,6 +35,9 @@ textarea{
 	color: white;
 	outline-width: 0px;
 	background-color: #E5EAEC;
+}
+textarea:hover{
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 #msgs{
 	width: 65%;
