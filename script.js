@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 	}, 1000);
 
 
-	function checkSubmit(e){
+
 		var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
 		if(charCode == 13){
 
@@ -46,5 +46,5 @@ jQuery(document).ready(function($) {
 					});
 				}, 1000);
 			}
-		}
+
 });
