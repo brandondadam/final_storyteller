@@ -37,7 +37,7 @@ transition-duration: 0.4s;
 	background-color: #E5EAEC;
 }
 textarea:hover{
-	box-shadow: 0 0 12px rgba(180, 180, 180, 0.5);
+	box-shadow: 0 0 12px rgba(150, 150, 150, 0.6);
 }
 #msgs{
 	width: 65%;
