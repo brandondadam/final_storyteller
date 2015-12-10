@@ -17,9 +17,7 @@
 				}
 
 				if('msg' == 'reset'){
-					$msgs=glob('msg/*.txt');
 					foreach ($msgs as $filename){
-						$msg = file_get_contents($filename);
 						file_put_contents($filename, '');
 				}
 
