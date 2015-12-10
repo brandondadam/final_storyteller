@@ -53,6 +53,8 @@ textarea{
 	}
 	#msgs{
 		max-width: 75%;
+		margin-left: 40px;
+		float: left;
 	}
 
 }
