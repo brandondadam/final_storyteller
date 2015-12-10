@@ -27,7 +27,6 @@ jQuery(document).ready(function($) {
 function checkSubmit(e){
 	var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
 	if(charCode == 13){
-
 			$('form').submit(function(e) {
 				console.log('checking');
 				e.preventDefault();
@@ -39,7 +38,6 @@ function checkSubmit(e){
 					}
 				});
 			});
-
 			setInterval(function(){
 				$.ajax('update.php', {
 					method: 'POST',
