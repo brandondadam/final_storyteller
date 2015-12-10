@@ -11,13 +11,14 @@
 			<textarea type="text" id="type" name="msg" placeholder="Add to the story..." rows="8" cols"80"></textarea>
 		</form>
 
-
+		<button onclick="saveTextAsFile()">Save The Story</button>
 
 		<div id="msgs">
 			<?php
 				if (!file_exists('msg')) {
 					mkdir('msg');
 				}
+
 				$msgs=glob('msg/*.txt');
 				foreach ($msgs as $filename){
 					$msg = file_get_contents($filename);
@@ -27,6 +28,7 @@
 				}
 			?>
 		</div>
+
 
 
 		<script src="jquery-1.11.3.min.js"></script>
