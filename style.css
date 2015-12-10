@@ -53,10 +53,11 @@ textarea{
 	}
 	#msgs{
 		margin-left: 0px;
-		width: 100%;
+		width: 75%;
 	}
 
 	#msgs p{
 		margin-left: 0px;
+		margin-right: 0px;
 	}
 }
