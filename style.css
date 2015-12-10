@@ -55,4 +55,7 @@ textarea{
 		margin: 40px;
 		width: 75%;
 	}
+	#msgs p{
+		float: left;
+	}
 }
