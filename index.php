@@ -17,7 +17,7 @@
 		<?php
 			} else {
 				?>
-			<textarea id="type" name="msg" placeholder="Thanks for your submission! Come back tomorrow to contribute to another story."></textarea>
+			<textarea disabled id="type" name="msg" placeholder="Thanks for your submission! Come back tomorrow to contribute to another story."></textarea>
 			<?php
 			}
 		?>
