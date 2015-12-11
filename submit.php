@@ -11,8 +11,6 @@ if (empty($_SESSION['already_submitted'])) {
 		}
 	}
 	$_SESSION['already_submitted'] = true;
-	$_SESSION['time'] = idate('i');
-	$_SESSION['time_difference'] = idate('i')-$_SESSION['time'];
-
+	$_SESSION['time'] = idate('z');
 }
 ?>

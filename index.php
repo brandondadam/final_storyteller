@@ -39,8 +39,8 @@
 		<div class="timer">
 		<p><?php
 				if (!empty($_SESSION['already_submitted'])){
-					if (($_SESSION['time'] - idate('i')) < 1){
-						echo $_SESSION['time'] - idate('i');
+					if (($_SESSION['time'] - idate('z')) < 1){
+						echo $_SESSION['time'] - idate('z');
 						session_destroy();
 					}
 				}
