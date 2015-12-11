@@ -36,13 +36,15 @@
 			?>
 		</div>
 
-
-			<?php
-					if ($_SESSION['time_difference'] != $_SESSION['time']){
-						session_destroy();
+		<div class="timer">
+		<p><?php
+				if (!empty($_SESSION['already_submitted'])){
+					if (($_SESSION['time'] - idate('i')) < 1){
+						echo $_SESSION['time'] - idate('i');
 					}
-			?>
-
+				}
+			?></p>
+	</div>
 
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
