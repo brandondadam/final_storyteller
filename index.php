@@ -42,7 +42,7 @@
 
 		<div class="timer">
 		<p><?php
-			echo idate('z');
+			echo idate('i');
 			?></p>
 	</div>
 
