@@ -52,7 +52,7 @@
 
 		<div class="timer">
 		<p><?php
-			echo $countMin
+			echo $countMin;
 			?></p>
 	</div>
 
