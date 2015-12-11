@@ -9,7 +9,6 @@
 	<body>
 		<?php
 			session_start();
-			session_destroy();
 			if (empty($_SESSION['already_submitted'])){
 		?>
 			<form onKeyPress="return checkSubmit(event);">
@@ -37,6 +36,16 @@
 				}
 			?>
 		</div>
+
+
+		<?php
+		$date = strtotime("December 3, 2014 2:00 PM");
+		$remaining = $date - time();
+		$days_remaining = floor($remaining / 86400);
+		$hours_remaining = floor(($remaining % 86400) / 3600);
+		?>
+		<?php echo $hours_remaining?>
+
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>

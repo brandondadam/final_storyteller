@@ -1,6 +1,5 @@
 <?php
 session_start();
-session_destroy();
 if (empty($_SESSION['already_submitted'])) {
 	if(!empty($_POST['msg'])){
 		$filename = time() . '.txt';
