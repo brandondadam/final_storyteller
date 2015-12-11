@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-	<?php
+	//<?php
 		//session_start();
 		//if (empty($_SESSION['already_submitted'])){
 			//?>
