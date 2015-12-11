@@ -21,7 +21,6 @@
 			<?php
 			}
 		?>
-
 		<div id="msgs">
 			<?php
 				if (!file_exists('msg')) {
@@ -38,11 +37,15 @@
 		</div>
 
 		<?php
-		$today = getdate();
-		
+		$today = getdate()[yday];
+
 		?>
+
 		<div class="timer">
-		<p><?php echo $reset_time?></p>
+		<p><?php
+			echo $today
+
+			?></p>
 	</div>
 
 		<script src="jquery-1.11.3.min.js"></script>
