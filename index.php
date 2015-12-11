@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (empty($_SESSION['already_submitted']) {
+
+  // HTML stuff to allow the user to submit
+
+} else {
+   echo 'You only get to submit once!';
+}
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,9 +18,38 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form onKeyPress="return checkSubmit(event);">
-			<textarea type="text" id="type" name="msg" placeholder="what's on your mind..." rows="8" cols"80"></textarea>
-		</form>
+
+
+		<?php
+		session_start();
+		if (empty($_SESSION['already_submitted']) {
+
+			<form onKeyPress="return checkSubmit(event);">
+				<textarea type="text" id="type" name="msg" placeholder="what's on your mind..." rows="8" cols"80"></textarea>
+			</form>
+
+		} else {
+		   echo 'You only get to submit once!';
+		}
+		?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<div id="msgs">
 			<?php
 				if (!file_exists('msg')) {
