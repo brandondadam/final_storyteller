@@ -7,6 +7,11 @@ body{
 *, *:before, *:after {
 	box-sizing: inherit;
 }
+h1{
+	font-size: 25px;
+	margin: 40px;
+	color: grey;
+}
 textarea, #msgs{
 	display: inline;
 }
@@ -19,7 +24,6 @@ textarea{
 	left: 0px;
 	float:left;
 	width: 35%;
-
 	border-style: hidden;
 	font-weight: bolder;
 	resize:none;

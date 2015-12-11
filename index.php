@@ -7,20 +7,21 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-	<?php
-		session_start();
-		if (empty($_SESSION['already_submitted'])){
-	?>
-		<form onKeyPress="return checkSubmit(event);">
-			<textarea type="text" id="type" name="msg" placeholder="add to the story..." rows="8" cols"80"></textarea>
-		</form>
-	<?php
-		} else {
-			?>
-		<textarea id="type" name="msg" placeholder="Thanks for your submission! Come back tomorrow to contribute to another story."></textarea>
+		<h1>Once upon a time...</h1>
 		<?php
-		}
-	?>
+			session_start();
+			if (empty($_SESSION['already_submitted'])){
+		?>
+			<form onKeyPress="return checkSubmit(event);">
+				<textarea type="text" id="type" name="msg" placeholder="add to the story..." rows="8" cols"80"></textarea>
+			</form>
+		<?php
+			} else {
+				?>
+			<textarea id="type" name="msg" placeholder="Thanks for your submission! Come back tomorrow to contribute to another story."></textarea>
+			<?php
+			}
+		?>
 
 		<div id="msgs">
 			<?php
