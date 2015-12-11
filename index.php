@@ -39,7 +39,7 @@
 
 		<?php
 		$today = getdate();
-		print_r($today);
+		
 		?>
 		<div class="timer">
 		<p><?php echo $reset_time?></p>
