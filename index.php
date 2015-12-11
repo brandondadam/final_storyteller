@@ -38,11 +38,12 @@
 
 		<?php
 
+
 		?>
 
 		<div class="timer">
 		<p><?php
-			echo idate('i');
+			echo $_SESSION['time'];
 			?></p>
 	</div>
 

@@ -11,6 +11,7 @@ if (empty($_SESSION['already_submitted'])) {
 		}
 	}
 	$_SESSION['already_submitted'] = true;
+	$_SESSION['time'] = idate('i');
 
 }
 ?>
