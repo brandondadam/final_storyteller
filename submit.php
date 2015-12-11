@@ -10,6 +10,6 @@ if (empty($_SESSION['already_submitted'])) {
 			echo '<p>' . htmlentities($msg) . '</p>';
 		}
 	}
-	$_SESSION['already_submitted'] = true;
+	$_SESSION['already_submitted'] = false;
 }
 ?>
