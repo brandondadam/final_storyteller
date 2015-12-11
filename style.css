@@ -20,7 +20,7 @@ textarea{
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0);
 	transition-duration: 0.3s;
 	position: fixed;
-	top:50px;
+	top:100px;
 	left: 0px;
 	float:left;
 	width: 35%;
