@@ -1,14 +1,3 @@
-<?php
-session_start();
-if (empty($_SESSION['already_submitted']) {
-
-  // HTML stuff to allow the user to submit
-
-} else {
-   echo 'You only get to submit once!';
-}
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
