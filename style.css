@@ -55,6 +55,7 @@ textarea:hover{
 @media (max-width: 600px){
 	textarea{
 		position:relative;
+		top: 100px;
 		left: 0px;
 		font-size: 28px;
 		height: 200px;
