@@ -43,7 +43,9 @@
 
 		<div class="timer">
 		<p><?php
-			echo $_SESSION['time'];
+				if (empty($_SESSION['already_submitted'])){
+					echo $_SESSION['time'];
+				}
 			?></p>
 	</div>
 
