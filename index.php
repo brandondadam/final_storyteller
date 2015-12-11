@@ -52,7 +52,7 @@
 
 		<div class="timer">
 		<p><?php
-			echo $countMin;
+			echo 'Time remaining until next run is in ',$countMin,' minute(s) ',$countSec,' seconds';
 			?></p>
 	</div>
 
