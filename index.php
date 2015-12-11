@@ -37,9 +37,12 @@
 			?>
 		</div>
 
-
+		<?php
+		$today = getdate();
+		print_r($today);
+		?>
 		<div class="timer">
-		<p><?php echo $_SESSION['reset_time']?></p>
+		<p><?php echo $reset_time?></p>
 	</div>
 
 		<script src="jquery-1.11.3.min.js"></script>
