@@ -38,11 +38,9 @@
 
 
 			<?php
-				if (!empty($_SESSION['already_submitted'])){
 					if ($_SESSION['time_difference'] != $_SESSION['time']){
 						session_destroy();
 					}
-				}
 			?>
 
 
