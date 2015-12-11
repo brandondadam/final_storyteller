@@ -9,7 +9,7 @@ body{
 }
 h1{
 	font-size: 25px;
-	font-weight: lighter;
+	font-weight: normal;
 	margin-left: 40px;
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -55,7 +55,7 @@ textarea:hover{
 @media (max-width: 600px){
 	textarea{
 		position:relative;
-		top: 0px;
+		top: 50px;
 		left: 0px;
 		font-size: 28px;
 		height: 200px;
