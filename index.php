@@ -16,7 +16,9 @@
 		</form>
 	<?php
 		} else {
+			?><?php
 		<textarea type="text" id="type" name="msg"></textarea>
+		?><?php
 		}
 	?>
 
