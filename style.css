@@ -9,7 +9,10 @@ body{
 }
 h1{
 	font-size: 25px;
-	margin: 40px;
+	font-weight: lighter;
+	margin-left: 40px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	color: grey;
 }
 textarea, #msgs{
