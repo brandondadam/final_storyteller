@@ -41,6 +41,7 @@
 				if (!empty($_SESSION['already_submitted'])){
 					if (($_SESSION['time'] - idate('i')) < 1){
 						echo $_SESSION['time'] - idate('i');
+						session_destroy();
 					}
 				}
 			?></p>
