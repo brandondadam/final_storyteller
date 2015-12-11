@@ -7,7 +7,7 @@ $('form').submit(function(e) {
 			$('#msgs').html(msgs);
 		}
 	});
-	$('textarea').val('');
+	$('textarea').val('Thanks for your submission!');
 });
 setInterval(function() {
 	$.ajax('update.php', {
