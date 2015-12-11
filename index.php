@@ -54,7 +54,6 @@
 		<p><?php
 			echo 'Time remaining until next run is in ',$countMin,';
 
-echo idate('yday', time());
 			?></p>
 	</div>
 
