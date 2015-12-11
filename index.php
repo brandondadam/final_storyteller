@@ -23,7 +23,6 @@
 		?>
 
 		<div id="msgs">
-			<p>text for sample.</p>
 			<?php
 				if (!file_exists('msg')) {
 					mkdir('msg');
