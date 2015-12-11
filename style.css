@@ -23,7 +23,7 @@ textarea{
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0);
 	transition-duration: 0.3s;
 	position: fixed;
-	top:100px;
+	top:80px;
 	left: 0px;
 	float:left;
 	width: 35%;
@@ -55,7 +55,7 @@ textarea:hover{
 @media (max-width: 600px){
 	textarea{
 		position:relative;
-		top: 50px;
+		top: 20px;
 		left: 0px;
 		font-size: 28px;
 		height: 200px;
