@@ -35,18 +35,6 @@
 				}
 			?>
 		</div>
-
-		<div class="timer">
-		<p><?php
-				if (!empty($_SESSION['already_submitted'])){
-					if (($_SESSION['time'] - idate('z')) < 1){
-						file_put_contents($filename, '');
-						session_destroy();
-					}
-				}
-			?></p>
-	</div>
-
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>
 	</body>
