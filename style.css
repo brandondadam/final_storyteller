@@ -7,14 +7,6 @@ body{
 *, *:before, *:after {
 	box-sizing: inherit;
 }
-h1{
-	font-size: 25px;
-	font-weight: normal;
-	margin-left: 40px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	color: grey;
-}
 textarea, #msgs{
 	display: inline;
 }
@@ -23,10 +15,11 @@ textarea{
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0);
 	transition-duration: 0.3s;
 	position: fixed;
-	top:80px;
+	top:50px;
 	left: 0px;
 	float:left;
 	width: 35%;
+
 	border-style: hidden;
 	font-weight: bolder;
 	resize:none;
@@ -55,7 +48,7 @@ textarea:hover{
 @media (max-width: 600px){
 	textarea{
 		position:relative;
-		top: 100px;
+		top: 0px;
 		left: 0px;
 		font-size: 28px;
 		height: 200px;

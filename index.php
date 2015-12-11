@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>Once upon a time...</h1>
 		<?php
 			session_start();
 			if (empty($_SESSION['already_submitted'])){
@@ -24,6 +23,7 @@
 		?>
 
 		<div id="msgs">
+			<p>text for sample.</p>
 			<?php
 				if (!file_exists('msg')) {
 					mkdir('msg');
