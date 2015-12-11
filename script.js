@@ -8,6 +8,8 @@ $('form').submit(function(e) {
 		}
 	});
 	$('textarea').val('');
+	$('textarea').attr('placeholder', 'Thanks for your submission! Come back tomorrow to contribute to another story.');
+	$('textarea').attr('disabled', true);
 });
 setInterval(function() {
 	$.ajax('update.php', {
@@ -17,6 +19,7 @@ setInterval(function() {
 		}
 	});
 }, 1000);
+
 function checkSubmit(e){
 	var charCode = e ? (e.which ? e.which: e.keycode): window.event.keycode;
 	if(charCode == 13){
