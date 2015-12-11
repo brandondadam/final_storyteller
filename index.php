@@ -7,21 +7,17 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<?php
+	<?php
 		session_start();
 		if (empty($_SESSION['already_submitted']) {
-
-			<form onKeyPress="return checkSubmit(event);">
+			'<form onKeyPress="return checkSubmit(event);">
 				<textarea type="text" id="type" name="msg" placeholder="what's on your mind..." rows="8" cols"80"></textarea>
-			</form>
+			</form>''
 			<div id="msgs">
-
 		} else {
-		   echo 'You only get to submit once!';
+			echo 'You only get to submit once!';
 		}
-?>
-
-
+	?>
 			<?php
 				if (!file_exists('msg')) {
 					mkdir('msg');
