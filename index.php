@@ -37,8 +37,8 @@
 		</div>
 
 		<?php
-		$today = getdate()[yday];
-
+		$today = getdate();
+		$today = $today[yday];
 		?>
 
 		<div class="timer">
