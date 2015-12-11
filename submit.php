@@ -11,5 +11,6 @@ if (empty($_SESSION['already_submitted'])) {
 		}
 	}
 	$_SESSION['already_submitted'] = true;
+	$_SESSION['reset_time'] = new DateTime('now');
 }
 ?>
