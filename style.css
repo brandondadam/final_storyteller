@@ -41,13 +41,10 @@ textarea:hover{
 	margin-top: 50px;
 	margin-left: 35%;
 }
-.timer p{
-	position: fixed;
-	top: 500px;
-	left: 200px;
-	font-size: 25px;
+#msgs p{
+	margin-right: 50px;
+	margin-left: 100px;
 }
-
 @media (max-width: 600px){
 	textarea{
 		position:relative;
