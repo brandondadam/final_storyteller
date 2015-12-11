@@ -42,7 +42,7 @@
 		print_r($today);
 		?>
 		<div class="timer">
-		<p><?php echo $today?></p>
+		<p><?php echo date()?></p>
 	</div>
 
 		<script src="jquery-1.11.3.min.js"></script>
