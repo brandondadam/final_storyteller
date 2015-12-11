@@ -1,6 +1,6 @@
 <?php
-session_start();
-if (empty($_SESSION['already_submitted'])) {
+//session_start();
+//if (empty($_SESSION['already_submitted'])) {
 	if(!empty($_POST['msg'])){
 		$filename = time() . '.txt';
 		file_put_contents("msg/$filename", $_POST['msg']);
@@ -10,6 +10,6 @@ if (empty($_SESSION['already_submitted'])) {
 			echo '<p>' . htmlentities($msg) . '</p>';
 		}
 	}
-	$_SESSION['already_submitted'] = true;
-}
+//	$_SESSION['already_submitted'] = true;
+//}
 ?>

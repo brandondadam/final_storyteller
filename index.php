@@ -8,15 +8,17 @@
 	</head>
 	<body>
 	<?php
-		session_start();
-		if (empty($_SESSION['already_submitted'])){
-			?><form onKeyPress="return checkSubmit(event);">
+		//session_start();
+		//if (empty($_SESSION['already_submitted'])){
+			//?>
+			<form onKeyPress="return checkSubmit(event);">
 				<textarea type="text" id="type" name="msg" placeholder="add to the story..." rows="8" cols"80"></textarea>
-			</form><?php
-		} else {
-			echo 'You only get to submit once!';
-		}
-	?>
+			</form>
+			//<?php
+	//	} else {
+		//	echo 'You only get to submit once!';
+	//	}
+	//?>
 		<div id="msgs">
 			<?php
 				if (!file_exists('msg')) {
