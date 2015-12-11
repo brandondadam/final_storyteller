@@ -44,7 +44,7 @@
 		$days_remaining = floor($remaining / 86400);
 		$hours_remaining = floor(($remaining % 86400) / 3600);
 		?>
-		<?php echo $hours_remaining?>
+		<p><?php echo $hours_remaining?></p>
 
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="script.js"></script>

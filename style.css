@@ -45,6 +45,14 @@ textarea:hover{
 	margin-right: 50px;
 	margin-left: 100px;
 }
+
+p{
+	position: fixed;
+	top: 700px;
+	left: 600px;
+	font-size: 50px;
+}
+
 @media (max-width: 600px){
 	textarea{
 		position:relative;
