@@ -7,10 +7,7 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-
-
-
-
+		<?php
 		session_start();
 		if (empty($_SESSION['already_submitted']) {
 
@@ -22,7 +19,7 @@
 		} else {
 		   echo 'You only get to submit once!';
 		}
-
+?>
 
 
 			<?php
