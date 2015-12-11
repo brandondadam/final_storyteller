@@ -36,15 +36,11 @@
 			?>
 		</div>
 
-		<?php
-
-
-		?>
-
 		<div class="timer">
 		<p><?php
 				if (!empty($_SESSION['already_submitted'])){
 					echo $_SESSION['time'];
+					echo $_SESSION['time'] - idate('i');
 				}
 			?></p>
 	</div>
