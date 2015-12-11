@@ -9,6 +9,7 @@
 	<body>
 		<?php
 			session_start();
+			session_destroy();
 			if (empty($_SESSION['already_submitted'])){
 		?>
 			<form onKeyPress="return checkSubmit(event);">
